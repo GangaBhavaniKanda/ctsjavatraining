@@ -1,0 +1,12 @@
+127.0.0.1 - - [10/Mar/2020:15:25:14 +0530] "GET / HTTP/1.1" 404 709
+127.0.0.1 - - [10/Mar/2020:15:25:14 +0530] "GET /exam/connection.html HTTP/1.1" 200 3446
+127.0.0.1 - - [10/Mar/2020:15:35:41 +0530] "GET /exam/connection.html HTTP/1.1" 200 3532
+127.0.0.1 - - [10/Mar/2020:15:35:45 +0530] "GET /exam/connection.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/Mar/2020:15:35:45 +0530] "GET /exam/connection.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/Mar/2020:15:35:57 +0530] "GET /exam/connection.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/Mar/2020:15:35:57 +0530] "GET /exam/connection.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/Mar/2020:15:35:57 +0530] "GET /exam/connection.html HTTP/1.1" 304 -
+127.0.0.1 - - [10/Mar/2020:15:36:32 +0530] "GET /exam/connection.html?custname=hjhfag&email=agjh@gmail.com&mobile=9848824996&conntype=Pre&scheme=Local&duration=5&submit= HTTP/1.1" 200 3532
+127.0.0.1 - - [10/Mar/2020:15:37:06 +0530] "GET /exam/connection.html?custname=jhskjd&email=hfg@gmail.com&mobile=9848825887&conntype=Pre&scheme=Local&duration=5&submit= HTTP/1.1" 200 3532
+127.0.0.1 - - [10/Mar/2020:15:37:45 +0530] "GET /exam/connection.html?custname=asd&email=a@g.com&mobile=8978664036&conntype=Pre&scheme=Local&duration=12&submit= HTTP/1.1" 200 3532
+127.0.0.1 - - [10/Mar/2020:15:38:25 +0530] "GET /exam/connection.html?custname=hfkjsdhfkj&email=kg@gmail.com&mobile=8488249966&conntype=Pre&scheme=Local&duration=5&submit= HTTP/1.1" 200 3532

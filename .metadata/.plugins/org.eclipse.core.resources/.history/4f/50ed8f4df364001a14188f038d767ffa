@@ -1,0 +1,15 @@
+package categories;
+
+import org.junit.Test;
+
+public class X {
+	@Test
+	public void m1() {
+		System.out.println("m1 from x");
+	}
+	@Test
+	public void m2() {
+		System.out.println("m2 from x");
+	}
+
+}

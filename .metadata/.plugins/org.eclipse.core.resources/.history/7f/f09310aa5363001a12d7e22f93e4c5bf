@@ -1,0 +1,12 @@
+package unittesting;
+
+import org.junit.runner.JUnitCore;
+
+public class TestSuiteMain {
+
+	public static void main(String[] args) {
+		JUnitCore.runClasses(TestSuite.class);
+
+	}
+
+}

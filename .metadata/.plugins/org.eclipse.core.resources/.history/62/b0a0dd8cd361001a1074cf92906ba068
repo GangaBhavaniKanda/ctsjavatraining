@@ -1,0 +1,35 @@
+package unittesting;
+
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class Testing {
+	@Test
+	public void test1() {
+		System.out.println("test case 1");
+	}
+
+	@Test
+	public void test2() {
+		System.out.println("test case 2");
+	}
+	@BeforeEach
+	public void beforeTest() {
+		System.out.println("before each testcase");
+	}
+	@AfterEach
+	public void afterTest() {
+		System.out.println("after each testcase");
+	}
+	@BeforeAll
+	public static void beforeClassBegin() {
+		System.out.println("before begining of the class");
+	}
+	@AfterAll
+	public static void afterAllMethodsOfTheClass() {
+		System.out.println("before begining of the class");
+	}
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="one2many.Items" table="items">
+		<id name="id" type="long" column="id">
+			<generator class="identity"/>
+		</id>
+		<property name="itemId" type="string" column="item_id"/>
+		<property name="itemTotal" type="double" column="item_total"/>
+		<property name="quantity" type="integer" column="quantity"/>
+		<many-to-one name="cart" class="one2many.Cart">
+			<column name="cart_id" not-null="true"></column>
+		</many-to-one>
+		</class>
+</hibernate-mapping>

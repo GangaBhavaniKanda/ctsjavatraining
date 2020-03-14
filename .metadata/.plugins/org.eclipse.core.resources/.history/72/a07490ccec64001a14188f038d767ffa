@@ -1,0 +1,16 @@
+package junit4;
+
+import org.junit.Test;
+
+public class TestUnit2 {
+	@Test
+	public void m3() {
+		System.out.println("from method3 from TestUnit2");
+	}
+	@Test
+	public void m4() {
+		System.out.println("from method3 from TestUnit2");
+	}
+	
+
+}

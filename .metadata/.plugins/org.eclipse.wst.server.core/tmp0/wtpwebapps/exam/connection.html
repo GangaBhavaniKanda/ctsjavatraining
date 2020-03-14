@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color:#EED426;
+        }
+        h1{
+            color:#006666;
+            font-style:verdana;
+            text-align:center;
+        }
+        #rentalcost{
+            border: solid 1;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        p{
+            margin-left: 1000px;
+        }
+        #td1{
+            border: solid 1;
+        }
+    </style>
+    <script>
+        function calculate(){
+            var duration=document.getElementsByName("duration").value;
+            var schem=document.getElementsByName("scheme").value;
+            var cost_per_month=0;
+            if(schem==="Local")
+            {
+                cost_per_month=200;
+            }
+            else if(schem==="STD"){
+                cost_per_month=350;
+            }
+            else if(schem==="FullTalkTime"){
+                cost_per_month=500;
+            }
+            var monthly_rental=0;
+            var con_type=document.getElementById("connectiontype").value;
+            if(con_type==="Pre"){
+                monthly_rental=75;
+            }
+            else if(con_type==="Post"){
+                monthly_rental=150;
+            }
+            var total_monthly_rental_cost=(duration*cost_per_month)+monthly_rental;
+             document.getElementById("div1").innerHTML="The Total Monthly Rental Cost is Rs. "+total_monthly_rental_cost;
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h1>ACTB Connection Portal</h1>
+   
+    <form onsubmit="return calculate()">
+    <table>
+        <tr><td><label>Customer Name</label></td><td><input type="text" name="custname" placeholder="Enter the customer name" pattern="[a-zA-z\s]{1,}" required></td></tr>
+        <tr><td><label>Customer Email</label></td><td><input type="email" name="email" placeholder="abc@gmail.com" required></td></tr>
+        <tr><td><label>Telephone/ Mobile Number</label></td><td><input type="text" name="mobile" pattern="[987]{1}[0-9]{9}" placeholder="Enter the Mobile Number" required></td></tr>
+        <tr><td><label>Connection Type</label></td>
+        <td>
+            <select id="connectiontype" name="conntype" required>
+            <option id="Pre">Pre</option>
+            <option id="Post">Post</option>
+            </select>
+         </td></tr>
+        <tr><td><label>Scheme Name</label></td>
+        <td><input type="radio" name="scheme" id="scheme1" value="Local" required>Local
+            <input type="radio" name="scheme" id="scheme2" value="STD" required>STD
+            <input type="radio" name="scheme" id="scheme3" value="FullTalkTime" required>FullTalkTime</td></tr>
+        <tr><td><label>Connection Duration</label></td><td><input type="number" min="1" max="12" name="duration" required></td></tr>
+        <tr><td><button name="submit" type="submit">Connection Bill Amount</button></td>
+        <td><button name="clear" type="reset">Reset</button></td></tr>
+        <tr><td><div name="result" id="div1"></div></td></tr>
+    </table>
+    <p>Rental Cost Table</p>
+    <table id="rentalcost">
+        <tr><td id="td1">Connection Type</td><td id="td1">Call Limit</td><td id="td1">Monthly Rental</td></tr>
+        <tr><td id="td1">Pre</td><td id="td1">500 </td><td id="td1">75</td></tr>
+        <tr><td id="td1">Post</td><td id="td1">Unlimited</td><td id="td1">150</td></tr>
+    </table>
+</form>
+</body>
+</html>

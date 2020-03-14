@@ -1,0 +1,11 @@
+INDEX VERSION 1.130
+C:\javatraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\86778755.index
+\MVC\src
+C:\javatraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1722330813.index
+\jstl\src
+C:\javatraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1557319629.index
+\project_example\src
+C:\javatraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2942483961.index
+\projectexample\src
+C:\javatraining\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3085120775.index
+\jspExamples\src
