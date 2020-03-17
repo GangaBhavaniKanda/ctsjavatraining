@@ -1,0 +1,9 @@
+1.create table in mysql
+   user(uname,pawd)-varchar
+   accounts(acno-varchar,name-varchar,acktype-varchar,balance -float)
+
+2.
+ create separate java proj
+ with 2 packages dao and dto
+
+3. create classes for users&accounts in dto
